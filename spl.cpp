@@ -47,7 +47,7 @@ pil :
    					kolomb = 1;
 							for (i = 0; i < barisb; i++){
       							for (j = 0; j < kolomb; j++){
-      							printf("Input Matriks B[%d][%d]: ",i+1,j+1);
+      							printf("\nInput Matriks B[%d][%d]: ",i+1,j+1);
   								scanf("%d",&matrik2[i][j]);
       					}
    					}
