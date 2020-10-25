@@ -7,10 +7,11 @@ int pil, pil1, pil2, pil3;
 int barisa, koloma, barisb, kolomb, i, j, matrik1[10][10], matrik2[10][10], jumlah[10][10];
 
 pil :
+	printf ("\nMenu : \n");
 	printf ("\n1. Sistem Persamaan Linier");
 	printf ("\n2. Determninan");
 	printf ("\n3. Matriks Balikan");
-	printf ("\n4. Keluar");
+	printf ("\n4. Keluar\n");
 	printf ("\nMasukkan Pilihan : "); scanf("%d", &pil);
 	
 	switch (pil) {
@@ -43,11 +44,12 @@ pil :
     						printf("\n");
     						
    					}
+   					printf("\n");
    					barisb = barisa;
    					kolomb = 1;
 							for (i = 0; i < barisb; i++){
       							for (j = 0; j < kolomb; j++){
-      							printf("\nInput Matriks B[%d][%d]: ",i+1,j+1);
+      							printf("Input Matriks B[%d][%d]: ",i+1,j+1);
   								scanf("%d",&matrik2[i][j]);
       					}
    					}
@@ -63,13 +65,121 @@ pil :
    						
 						break;
 					case 2 :
+						printf ("\n======================================================================================================================\n");
 						printf ("Metode Eliminasi Gauss-Jordan");
+						printf("\nInput jumlah baris matrik A : "); scanf("%d", &barisa);
+						printf("Input jumlah kolom matrik A : "); scanf("%d", &koloma);
+							for (i = 0; i < barisa; i++){
+      							for (j = 0; j < koloma; j++){
+      							printf("Input Matriks A[%d][%d]: ",i+1,j+1);
+  								scanf("%d",&matrik1[i][j]);
+      					}
+   					}
+   						printf("\n Matrik A : \n");
+   							for (i=0; i< barisa; i++){
+    							for (j=0; j<koloma; j++){
+    							printf("%3d", matrik1[i][j]);
+    					}
+    						printf("\n");
+    						
+   					}
+   					printf("\n");
+   					barisb = barisa;
+   					kolomb = 1;
+							for (i = 0; i < barisb; i++){
+      							for (j = 0; j < kolomb; j++){
+      							printf("Input Matriks B[%d][%d]: ",i+1,j+1);
+  								scanf("%d",&matrik2[i][j]);
+      					}
+   					}
+   					printf("\n Matrik B : \n");
+   							for (i=0; i< barisb; i++){
+    							for (j=0; j<kolomb; j++){
+    							printf("%3d", matrik2[i][j]);
+    					}
+    						printf("\n");
+    						
+   					}
+   					//rumusnya
+   						
 						break;
 					case 3 :
+						printf ("\n======================================================================================================================\n");
 						printf ("Metode Matriks Balikan");
+						printf("\nInput jumlah baris matrik A : "); scanf("%d", &barisa);
+						printf("Input jumlah kolom matrik A : "); scanf("%d", &koloma);
+							for (i = 0; i < barisa; i++){
+      							for (j = 0; j < koloma; j++){
+      							printf("Input Matriks A[%d][%d]: ",i+1,j+1);
+  								scanf("%d",&matrik1[i][j]);
+      					}
+   					}
+   						printf("\n Matrik A : \n");
+   							for (i=0; i< barisa; i++){
+    							for (j=0; j<koloma; j++){
+    							printf("%3d", matrik1[i][j]);
+    					}
+    						printf("\n");
+    						
+   					}
+   					printf("\n");
+   					barisb = barisa;
+   					kolomb = 1;
+							for (i = 0; i < barisb; i++){
+      							for (j = 0; j < kolomb; j++){
+      							printf("Input Matriks B[%d][%d]: ",i+1,j+1);
+  								scanf("%d",&matrik2[i][j]);
+      					}
+   					}
+   					printf("\n Matrik B : \n");
+   							for (i=0; i< barisb; i++){
+    							for (j=0; j<kolomb; j++){
+    							printf("%3d", matrik2[i][j]);
+    					}
+    						printf("\n");
+    						
+   					}
+   					//rumusnya
+   						
 						break;
 					case 4 :
+						printf ("\n======================================================================================================================\n");
 						printf ("Kaidah Cramer");
+						printf("\nInput jumlah baris matrik A : "); scanf("%d", &barisa);
+						printf("Input jumlah kolom matrik A : "); scanf("%d", &koloma);
+							for (i = 0; i < barisa; i++){
+      							for (j = 0; j < koloma; j++){
+      							printf("Input Matriks A[%d][%d]: ",i+1,j+1);
+  								scanf("%d",&matrik1[i][j]);
+      					}
+   					}
+   						printf("\n Matrik A : \n");
+   							for (i=0; i< barisa; i++){
+    							for (j=0; j<koloma; j++){
+    							printf("%3d", matrik1[i][j]);
+    					}
+    						printf("\n");
+    						
+   					}
+   					printf("\n");
+   					barisb = barisa;
+   					kolomb = 1;
+							for (i = 0; i < barisb; i++){
+      							for (j = 0; j < kolomb; j++){
+      							printf("Input Matriks B[%d][%d]: ",i+1,j+1);
+  								scanf("%d",&matrik2[i][j]);
+      					}
+   					}
+   					printf("\n Matrik B : \n");
+   							for (i=0; i< barisb; i++){
+    							for (j=0; j<kolomb; j++){
+    							printf("%3d", matrik2[i][j]);
+    					}
+    						printf("\n");
+    						
+   					}
+   					//rumusnya
+   						
 						break;
 				}
 				break;
@@ -84,16 +194,160 @@ pil :
 				printf ("\nMasukkan Pilihan : "); scanf("%d", &pil2);
 				switch (pil2) {
 					case 1 :
+						printf ("\n======================================================================================================================\n");
 						printf ("Metode Eliminasi Gauss");
+						printf("\nInput jumlah baris matrik A : "); scanf("%d", &barisa);
+						printf("Input jumlah kolom matrik A : "); scanf("%d", &koloma);
+							for (i = 0; i < barisa; i++){
+      							for (j = 0; j < koloma; j++){
+      							printf("Input Matriks A[%d][%d]: ",i+1,j+1);
+  								scanf("%d",&matrik1[i][j]);
+      					}
+   					}
+   						printf("\n Matrik A : \n");
+   							for (i=0; i< barisa; i++){
+    							for (j=0; j<koloma; j++){
+    							printf("%3d", matrik1[i][j]);
+    					}
+    						printf("\n");
+    						
+   					}
+   					printf("\n");
+   					barisb = barisa;
+   					kolomb = 1;
+							for (i = 0; i < barisb; i++){
+      							for (j = 0; j < kolomb; j++){
+      							printf("Input Matriks B[%d][%d]: ",i+1,j+1);
+  								scanf("%d",&matrik2[i][j]);
+      					}
+   					}
+   					printf("\n Matrik B : \n");
+   							for (i=0; i< barisb; i++){
+    							for (j=0; j<kolomb; j++){
+    							printf("%3d", matrik2[i][j]);
+    					}
+    						printf("\n");
+    						
+   					}
+   					//rumusnya
+   						
 						break;
 					case 2 :
+						printf ("\n======================================================================================================================\n");
 						printf ("Metode Eliminasi Gauss-Jordan");
+						printf("\nInput jumlah baris matrik A : "); scanf("%d", &barisa);
+						printf("Input jumlah kolom matrik A : "); scanf("%d", &koloma);
+							for (i = 0; i < barisa; i++){
+      							for (j = 0; j < koloma; j++){
+      							printf("Input Matriks A[%d][%d]: ",i+1,j+1);
+  								scanf("%d",&matrik1[i][j]);
+      					}
+   					}
+   						printf("\n Matrik A : \n");
+   							for (i=0; i< barisa; i++){
+    							for (j=0; j<koloma; j++){
+    							printf("%3d", matrik1[i][j]);
+    					}
+    						printf("\n");
+    						
+   					}
+   					printf("\n");
+   					barisb = barisa;
+   					kolomb = 1;
+							for (i = 0; i < barisb; i++){
+      							for (j = 0; j < kolomb; j++){
+      							printf("Input Matriks B[%d][%d]: ",i+1,j+1);
+  								scanf("%d",&matrik2[i][j]);
+      					}
+   					}
+   					printf("\n Matrik B : \n");
+   							for (i=0; i< barisb; i++){
+    							for (j=0; j<kolomb; j++){
+    							printf("%3d", matrik2[i][j]);
+    					}
+    						printf("\n");
+    						
+   					}
+   					//rumusnya
+   						
 						break;
 					case 3 :
+						printf ("\n======================================================================================================================\n");
 						printf ("Metode Matriks Balikan");
+						printf("\nInput jumlah baris matrik A : "); scanf("%d", &barisa);
+						printf("Input jumlah kolom matrik A : "); scanf("%d", &koloma);
+							for (i = 0; i < barisa; i++){
+      							for (j = 0; j < koloma; j++){
+      							printf("Input Matriks A[%d][%d]: ",i+1,j+1);
+  								scanf("%d",&matrik1[i][j]);
+      					}
+   					}
+   						printf("\n Matrik A : \n");
+   							for (i=0; i< barisa; i++){
+    							for (j=0; j<koloma; j++){
+    							printf("%3d", matrik1[i][j]);
+    					}
+    						printf("\n");
+    						
+   					}
+   					printf("\n");
+   					barisb = barisa;
+   					kolomb = 1;
+							for (i = 0; i < barisb; i++){
+      							for (j = 0; j < kolomb; j++){
+      							printf("Input Matriks B[%d][%d]: ",i+1,j+1);
+  								scanf("%d",&matrik2[i][j]);
+      					}
+   					}
+   					printf("\n Matrik B : \n");
+   							for (i=0; i< barisb; i++){
+    							for (j=0; j<kolomb; j++){
+    							printf("%3d", matrik2[i][j]);
+    					}
+    						printf("\n");
+    						
+   					}
+   					//rumusnya
+   						
 						break;
 					case 4 :
+						printf ("\n======================================================================================================================\n");
 						printf ("Kaidah Cramer");
+						printf("\nInput jumlah baris matrik A : "); scanf("%d", &barisa);
+						printf("Input jumlah kolom matrik A : "); scanf("%d", &koloma);
+							for (i = 0; i < barisa; i++){
+      							for (j = 0; j < koloma; j++){
+      							printf("Input Matriks A[%d][%d]: ",i+1,j+1);
+  								scanf("%d",&matrik1[i][j]);
+      					}
+   					}
+   						printf("\n Matrik A : \n");
+   							for (i=0; i< barisa; i++){
+    							for (j=0; j<koloma; j++){
+    							printf("%3d", matrik1[i][j]);
+    					}
+    						printf("\n");
+    						
+   					}
+   					printf("\n");
+   					barisb = barisa;
+   					kolomb = 1;
+							for (i = 0; i < barisb; i++){
+      							for (j = 0; j < kolomb; j++){
+      							printf("Input Matriks B[%d][%d]: ",i+1,j+1);
+  								scanf("%d",&matrik2[i][j]);
+      					}
+   					}
+   					printf("\n Matrik B : \n");
+   							for (i=0; i< barisb; i++){
+    							for (j=0; j<kolomb; j++){
+    							printf("%3d", matrik2[i][j]);
+    					}
+    						printf("\n");
+    						
+   					}
+   					//rumusnya
+   						
 						break;
 				}
 				break;
@@ -108,16 +362,160 @@ pil :
 				printf ("\nMasukkan Pilihan : "); scanf("%d", &pil3);
 				switch (pil3) {
 					case 1 :
+						printf ("\n======================================================================================================================\n");
 						printf ("Metode Eliminasi Gauss");
+						printf("\nInput jumlah baris matrik A : "); scanf("%d", &barisa);
+						printf("Input jumlah kolom matrik A : "); scanf("%d", &koloma);
+							for (i = 0; i < barisa; i++){
+      							for (j = 0; j < koloma; j++){
+      							printf("Input Matriks A[%d][%d]: ",i+1,j+1);
+  								scanf("%d",&matrik1[i][j]);
+      					}
+   					}
+   						printf("\n Matrik A : \n");
+   							for (i=0; i< barisa; i++){
+    							for (j=0; j<koloma; j++){
+    							printf("%3d", matrik1[i][j]);
+    					}
+    						printf("\n");
+    						
+   					}
+   					printf("\n");
+   					barisb = barisa;
+   					kolomb = 1;
+							for (i = 0; i < barisb; i++){
+      							for (j = 0; j < kolomb; j++){
+      							printf("Input Matriks B[%d][%d]: ",i+1,j+1);
+  								scanf("%d",&matrik2[i][j]);
+      					}
+   					}
+   					printf("\n Matrik B : \n");
+   							for (i=0; i< barisb; i++){
+    							for (j=0; j<kolomb; j++){
+    							printf("%3d", matrik2[i][j]);
+    					}
+    						printf("\n");
+    						
+   					}
+   					//rumusnya
+   						
 						break;
 					case 2 :
+						printf ("\n======================================================================================================================\n");
 						printf ("Metode Eliminasi Gauss-Jordan");
+						printf("\nInput jumlah baris matrik A : "); scanf("%d", &barisa);
+						printf("Input jumlah kolom matrik A : "); scanf("%d", &koloma);
+							for (i = 0; i < barisa; i++){
+      							for (j = 0; j < koloma; j++){
+      							printf("Input Matriks A[%d][%d]: ",i+1,j+1);
+  								scanf("%d",&matrik1[i][j]);
+      					}
+   					}
+   						printf("\n Matrik A : \n");
+   							for (i=0; i< barisa; i++){
+    							for (j=0; j<koloma; j++){
+    							printf("%3d", matrik1[i][j]);
+    					}
+    						printf("\n");
+    						
+   					}
+   					printf("\n");
+   					barisb = barisa;
+   					kolomb = 1;
+							for (i = 0; i < barisb; i++){
+      							for (j = 0; j < kolomb; j++){
+      							printf("Input Matriks B[%d][%d]: ",i+1,j+1);
+  								scanf("%d",&matrik2[i][j]);
+      					}
+   					}
+   					printf("\n Matrik B : \n");
+   							for (i=0; i< barisb; i++){
+    							for (j=0; j<kolomb; j++){
+    							printf("%3d", matrik2[i][j]);
+    					}
+    						printf("\n");
+    						
+   					}
+   					//rumusnya
+   						
 						break;
 					case 3 :
+						printf ("\n======================================================================================================================\n");
 						printf ("Metode Matriks Balikan");
+						printf("\nInput jumlah baris matrik A : "); scanf("%d", &barisa);
+						printf("Input jumlah kolom matrik A : "); scanf("%d", &koloma);
+							for (i = 0; i < barisa; i++){
+      							for (j = 0; j < koloma; j++){
+      							printf("Input Matriks A[%d][%d]: ",i+1,j+1);
+  								scanf("%d",&matrik1[i][j]);
+      					}
+   					}
+   						printf("\n Matrik A : \n");
+   							for (i=0; i< barisa; i++){
+    							for (j=0; j<koloma; j++){
+    							printf("%3d", matrik1[i][j]);
+    					}
+    						printf("\n");
+    						
+   					}
+   					printf("\n");
+   					barisb = barisa;
+   					kolomb = 1;
+							for (i = 0; i < barisb; i++){
+      							for (j = 0; j < kolomb; j++){
+      							printf("Input Matriks B[%d][%d]: ",i+1,j+1);
+  								scanf("%d",&matrik2[i][j]);
+      					}
+   					}
+   					printf("\n Matrik B : \n");
+   							for (i=0; i< barisb; i++){
+    							for (j=0; j<kolomb; j++){
+    							printf("%3d", matrik2[i][j]);
+    					}
+    						printf("\n");
+    						
+   					}
+   					//rumusnya
+   						
 						break;
 					case 4 :
+						printf ("\n======================================================================================================================\n");
 						printf ("Kaidah Cramer");
+						printf("\nInput jumlah baris matrik A : "); scanf("%d", &barisa);
+						printf("Input jumlah kolom matrik A : "); scanf("%d", &koloma);
+							for (i = 0; i < barisa; i++){
+      							for (j = 0; j < koloma; j++){
+      							printf("Input Matriks A[%d][%d]: ",i+1,j+1);
+  								scanf("%d",&matrik1[i][j]);
+      					}
+   					}
+   						printf("\n Matrik A : \n");
+   							for (i=0; i< barisa; i++){
+    							for (j=0; j<koloma; j++){
+    							printf("%3d", matrik1[i][j]);
+    					}
+    						printf("\n");
+    						
+   					}
+   					printf("\n");
+   					barisb = barisa;
+   					kolomb = 1;
+							for (i = 0; i < barisb; i++){
+      							for (j = 0; j < kolomb; j++){
+      							printf("Input Matriks B[%d][%d]: ",i+1,j+1);
+  								scanf("%d",&matrik2[i][j]);
+      					}
+   					}
+   					printf("\n Matrik B : \n");
+   							for (i=0; i< barisb; i++){
+    							for (j=0; j<kolomb; j++){
+    							printf("%3d", matrik2[i][j]);
+    					}
+    						printf("\n");
+    						
+   					}
+   					//rumusnya
+   						
 						break;
 				}
 				break;
